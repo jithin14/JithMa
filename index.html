@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JithMa Private Limited - Digital Transformation for Tomorrow</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom Font for a professional look */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fc; /* Very light background */
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="text-2xl font-bold text-indigo-600 tracking-tight">
+                JithMa<span class="text-gray-800"> Private Limited</span>
+            </a>
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex space-x-8 font-medium">
+                <a href="#services" class="text-gray-600 hover:text-indigo-600 transition duration-300">Services</a>
+                <a href="#expertise" class="text-gray-600 hover:text-indigo-600 transition duration-300">Expertise</a>
+                <a href="#portfolio" class="text-gray-600 hover:text-indigo-600 transition duration-300">Portfolio</a>
+                <a href="#contact" class="text-gray-600 hover:text-indigo-600 transition duration-300">Contact</a>
+            </nav>
+            <!-- Mobile Menu Button (SVG Icon) -->
+            <button class="md:hidden p-2 rounded-md hover:bg-gray-100 transition duration-150" aria-label="Toggle menu" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <svg class="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-100">
+            <nav class="flex flex-col space-y-2 p-4 font-medium">
+                <a href="#services" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block p-2 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg">Services</a>
+                <a href="#expertise" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block p-2 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg">Expertise</a>
+                <a href="#portfolio" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block p-2 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg">Portfolio</a>
+                <a href="#contact" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="block p-2 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-lg">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="py-20 lg:py-32 bg-indigo-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-4">
+                    Digital Transformation, Engineered.
+                </h1>
+                <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+                    We partner with businesses to deliver scalable software, robust cloud infrastructure, and actionable data strategy.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#contact" class="px-8 py-3 text-lg font-semibold text-white bg-indigo-600 rounded-lg shadow-md hover:bg-indigo-700 transition duration-300 transform hover:scale-105">
+                        Start Your Project
+                    </a>
+                    <a href="#services" class="px-8 py-3 text-lg font-semibold text-indigo-600 bg-white border border-indigo-600 rounded-lg shadow-md hover:bg-indigo-50 transition duration-300 transform hover:scale-105">
+                        View Our Services
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-extrabold text-gray-900 text-center mb-4">Our Core Services</h2>
+                <p class="text-xl text-gray-600 text-center mb-12 max-w-3xl mx-auto">
+                    From concept to deployment, we build end-to-end digital solutions that drive real business value.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Service 1: Software Development -->
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-indigo-500">
+                        <div class="text-indigo-600 mb-4">
+                            <!-- Code Icon -->
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Custom Software Development</h3>
+                        <p class="text-gray-600">
+                            Building scalable, high-performance web and mobile applications tailored precisely to your business needs. We use modern, robust frameworks.
+                        </p>
+                    </div>
+
+                    <!-- Service 2: Cloud Solutions -->
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-indigo-500">
+                        <div class="text-indigo-600 mb-4">
+                            <!-- Cloud Icon -->
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.988 2 2 0 00-1.733-2.007c-.4-.525-.865-1.008-1.5-1.5h-.001c-.139-.14-.302-.27-.5-.4a.5.5 0 00-.27-.1C12.025 3.012 11.012 3 9 3c-3.1 0-5.5 2.5-5.5 5.5s2.4 5.5 5.5 5.5h6.5a2.5 2.5 0 000-5h-1"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Cloud & DevOps Integration</h3>
+                        <p class="text-gray-600">
+                            Migrate, manage, and optimize your infrastructure on AWS, Azure, or GCP. Implement CI/CD pipelines for faster, more reliable deployments.
+                        </p>
+                    </div>
+
+                    <!-- Service 3: IT Consulting -->
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-indigo-500">
+                        <div class="text-indigo-600 mb-4">
+                            <!-- Chart Icon -->
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c1.626 0 3.245 1.05 4.192 2.768a4 4 0 01-1.79 3.232l-1.42 1.42c-.675.675-1.897 1.135-2.822 1.135a4 4 0 01-4-4c0-1.626 1.05-3.245 2.768-4.192l1.42-1.42c.675-.675 1.897-1.135 2.822-1.135z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Strategic IT Consulting</h3>
+                        <p class="text-gray-600">
+                            Develop long-term technology roadmaps, optimize existing systems, and ensure your IT strategy aligns perfectly with business goals.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us / Expertise Section -->
+        <section id="expertise" class="py-20 bg-indigo-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+                    <div class="mb-10 lg:mb-0">
+                        <h2 class="text-3xl font-extrabold text-gray-900 mb-4">Why Choose JithMa?</h2>
+                        <p class="text-lg text-gray-600 mb-8">
+                            We deliver results by focusing on technical excellence, transparent communication, and a partnership approach that extends beyond launch.
+                        </p>
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-3">
+                                <span class="text-green-500 mt-1">
+                                    <!-- Checkmark Icon -->
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                </span>
+                                <p class="text-gray-700"><strong class="font-semibold">Agile Methodology:</strong> Flexible, iterative development ensuring quick feedback cycles and product alignment.</p>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <span class="text-green-500 mt-1">
+                                    <!-- Checkmark Icon -->
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                </span>
+                                <p class="text-gray-700"><strong class="font-semibold">Global Standards:</strong> Our code meets international security and performance benchmarks.</p>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <span class="text-green-500 mt-1">
+                                    <!-- Checkmark Icon -->
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                </span>
+                                <p class="text-gray-700"><strong class="font-semibold">Post-Launch Support:</strong> Comprehensive maintenance and scaling assistance to ensure long-term success.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-8 rounded-xl shadow-2xl">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Our Tech Stack</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <!-- Stack Item -->
+                            <div class="p-3 bg-gray-100 rounded-lg flex items-center space-x-3">
+                                <span class="text-blue-500 font-bold">JS</span>
+                                <p class="text-sm font-medium">React, Node.js</p>
+                            </div>
+                            <!-- Stack Item -->
+                            <div class="p-3 bg-gray-100 rounded-lg flex items-center space-x-3">
+                                <span class="text-orange-500 font-bold">AWS</span>
+                                <p class="text-sm font-medium">Cloud Services</p>
+                            </div>
+                            <!-- Stack Item -->
+                            <div class="p-3 bg-gray-100 rounded-lg flex items-center space-x-3">
+                                <span class="text-purple-500 font-bold">DB</span>
+                                <p class="text-sm font-medium">PostgreSQL, MongoDB</p>
+                            </div>
+                            <!-- Stack Item -->
+                            <div class="p-3 bg-gray-100 rounded-lg flex items-center space-x-3">
+                                <span class="text-red-500 font-bold">PY</span>
+                                <p class="text-sm font-medium">Python/Django</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Preview Section (Mock Data) -->
+        <section id="portfolio" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-extrabold text-gray-900 text-center mb-4">Recent Projects</h2>
+                <p class="text-xl text-gray-600 text-center mb-12 max-w-3xl mx-auto">
+                    A glance at the challenges we've solved for our global clients.
+                </p>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <!-- Case Study 1 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                        <!-- Placeholder Image (Responsive) -->
+                        <img src="https://placehold.co/600x400/805ad5/ffffff?text=E-Commerce+Platform" alt="E-Commerce Platform Project" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <span class="inline-block bg-indigo-100 text-indigo-800 text-xs font-semibold px-3 py-1 rounded-full mb-2">E-Commerce</span>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">High-Capacity Retail Engine</h3>
+                            <p class="text-gray-600 text-sm">
+                                Scaled a client's online retail platform to handle 10,000+ transactions per hour using AWS Lambda and Node.js microservices.
+                            </p>
+                        </div>
+                    </div>
+                     <!-- Case Study 2 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                        <!-- Placeholder Image (Responsive) -->
+                        <img src="https://placehold.co/600x400/38a169/ffffff?text=Fintech+Security" alt="Fintech Security Project" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full mb-2">Cybersecurity</span>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Secure Financial Data Portal</h3>
+                            <p class="text-gray-600 text-sm">
+                                Developed a secure data visualization portal for a fintech firm, achieving compliance with strict banking regulations.
+                            </p>
+                        </div>
+                    </div>
+                     <!-- Case Study 3 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+                        <!-- Placeholder Image (Responsive) -->
+                        <img src="https://placehold.co/600x400/f6ad55/ffffff?text=Healthcare+App" alt="Healthcare Application Project" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <span class="inline-block bg-orange-100 text-orange-800 text-xs font-semibold px-3 py-1 rounded-full mb-2">Healthcare</span>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Patient Management System</h3>
+                            <p class="text-gray-600 text-sm">
+                                Created a HIPAA-compliant mobile application to streamline appointment booking and patient record access for a chain of clinics.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action / Contact Form -->
+        <section id="contact" class="py-20 bg-indigo-700">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-2xl mx-auto text-center">
+                    <h2 class="text-4xl font-extrabold text-white mb-4">Ready to Innovate?</h2>
+                    <p class="text-xl text-indigo-200 mb-8">
+                        Let's discuss your project goals and how technology can solve your biggest challenges.
+                    </p>
+                    
+                    <form action="#" method="POST" class="space-y-4 bg-white p-6 rounded-xl shadow-2xl">
+                        <div>
+                            <input type="text" name="name" placeholder="Your Name" required
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500 transition duration-150"
+                            >
+                        </div>
+                        <div>
+                            <input type="email" name="email" placeholder="Work Email" required
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500 transition duration-150"
+                            >
+                        </div>
+                        <div>
+                            <textarea name="message" rows="4" placeholder="Tell us about your project..." required
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500 transition duration-150"
+                            ></textarea>
+                        </div>
+                        <button type="submit"
+                            class="w-full px-4 py-3 text-lg font-semibold text-white bg-indigo-600 rounded-lg shadow-md hover:bg-indigo-700 transition duration-300 transform hover:scale-[1.01]"
+                            onclick="return false; alert('Thank you for your interest! In a real application, this form would submit your details to our sales team.')"
+                        >
+                            Request a Free Consultation
+                        </button>
+                         <p class="text-xs text-gray-500 mt-2">No commitment, just clarity.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- Col 1: Logo & Mission -->
+            <div>
+                <h3 class="text-xl font-bold text-indigo-400 mb-4">JithMa Private Limited</h3>
+                <p class="text-sm text-gray-400">
+                    Your dedicated partner in custom software development and digital strategy since 2025.
+                </p>
+            </div>
+            <!-- Col 2: Quick Links -->
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Company</h4>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="#about" class="hover:text-indigo-400 transition duration-300">About Us</a></li>
+                    <li><a href="#careers" class="hover:text-indigo-400 transition duration-300">Careers</a></li>
+                    <li><a href="#blog" class="hover:text-indigo-400 transition duration-300">Blog</a></li>
+                </ul>
+            </div>
+            <!-- Col 3: Legal & Support -->
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Support</h4>
+                <ul class="space-y-2 text-sm text-gray-400">
+                    <li><a href="#" class="hover:text-indigo-400 transition duration-300">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-indigo-400 transition duration-300">Terms of Service</a></li>
+                    <li><a href="#contact" class="hover:text-indigo-400 transition duration-300">Support Center</a></li>
+                </ul>
+            </div>
+            <!-- Col 4: Contact Info -->
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Get In Touch</h4>
+                <p class="text-sm text-gray-400 space-y-2">
+                    <a href="mailto:jithma@zohomail.in" class="block hover:text-indigo-400 transition duration-300">Email: jithma@zohomail.in</a>
+                    <a href="tel:+919876543210" class="block hover:text-indigo-400 transition duration-300">Phone: +91 9876 543 210</a>
+                    <span class="block">Bangalore, India</span>
+                </p>
+            </div>
+        </div>
+        <div class="mt-8 pt-8 border-t border-gray-700 text-center">
+            <p class="text-sm text-gray-500">&copy; 2025 JithMa Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
